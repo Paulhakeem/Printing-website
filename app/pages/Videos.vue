@@ -45,13 +45,13 @@
           <div
             class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
           >
-            <p class="text-white font-semibold">View Project</p>
+            <NuxtLink to="/services" class="text-white font-semibold">View Project</NuxtLink>
           </div>
         </div>
       </div>
     </div>
   </div>
- <ImagesVideos/>
+ <!-- <ImagesVideos/> -->
  </main>
 </template>
 
