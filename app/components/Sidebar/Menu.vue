@@ -2,7 +2,7 @@
   <nav class="bg-gray-800 flex items-center justify-between p-4">
     <!-- Left side menu -->
     <ul class="flex space-x-6">
-      <li v-for="(item, index) in menu" :key="index">
+      <li v-for="(item, index) in useLinks" :key="index">
         <NuxtLink
           :to="item.path"
           class="text-gray-200 hover:border-b hover:border-b-[#d8f3f4] text-sm font-medium tracking-wide uppercase"
@@ -20,11 +20,5 @@
 </template>
 
 <script setup>
-const menu = ref([
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Services", path: "/Services" },
-  { name: "Videos & Images", path: "/Videos" },
-  { name: "Contact", path: "/contacts" },
-]);
+const { useLinks } = functions();
 </script>

@@ -33,7 +33,7 @@
           </div>
           <nav>
             <ul class="space-y-6">
-              <li v-for="(item, index) in sideMenu" :key="index">
+              <li v-for="(item, index) in useLinks" :key="index">
                 <NuxtLink
                   :to="item.path"
                   class="text-gray-800 hover:border-b hover:border-b-[#d8f3f4] text-sm font-medium tracking-wide uppercase"
@@ -54,17 +54,5 @@
 </template>
 
 <script setup>
-const sideMenu = ref([
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Services", path: "/Services" },
-  { name: "Videos & Images", path: "/videos" },
-  { name: "Contact", path: "/contacts" },
-]);
-
-const menu = ref(false);
-
-const toggleMenu = () => {
-  menu.value = !menu.value;
-};
+const { useLinks, menu, toggleMenu } = functions();
 </script>
