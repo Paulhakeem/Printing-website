@@ -1,4 +1,4 @@
-import { ref, computed } from "vue";
+
 export default function () {
   // Categories you offer
   const categories = [
