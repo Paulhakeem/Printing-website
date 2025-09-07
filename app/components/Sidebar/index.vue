@@ -54,5 +54,5 @@
 </template>
 
 <script setup>
-const { useLinks, menu, toggleMenu } = functions();
+const { useLinks, menu, toggleMenu } = menuFunctions();
 </script>

@@ -20,5 +20,5 @@
 </template>
 
 <script setup>
-const { useLinks } = functions();
+const { useLinks } = menuFunctions();
 </script>
